@@ -1,11 +1,11 @@
 :root {
-    --bg-color: #67ad8a;
-    --card-bg: #FFF;
-    --accent-color: #cf2d04c9;
-    --text-main: #1e1e1e;
-    
-    --text-muted: #121212;
+--bg-color: #005312;
+    --card-bg: #f3e5c6;       /* Deeper green overlay so the white text pops */
+    --accent-color: #0f65b1;   /* High-visibility athletic gold/yellow */
+    --text-main: #2b1f1d;      /* Crisp white for perfect legibility on green */
+    --text-muted: #b39f94;    /* Softer, desaturated light green for secondary text */
 }
+
 
 * {
     box-sizing: border-box;
@@ -36,10 +36,20 @@ header {
 }
 
 .logo {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.logo img {
+    width: 290px; 
+    height: auto;
+    
+    object-fit: contain; 
+    
+    border-radius: 5px; 
+}
 h1 {
     font-size: 2.5rem;
     font-weight: 800;
@@ -60,9 +70,9 @@ h1 span {
 .schedule-card {
     background: var(--card-bg);
     border-left: 5px solid var(--accent-color);
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 8px;
-    margin: 2rem 0;
+    margin: 1rem 0;
     text-align: center;
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
